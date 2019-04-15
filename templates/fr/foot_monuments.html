@@ -1,0 +1,93 @@
+    <footer class="footer footer-deca">
+        <div class="container-fluid footer-container clearfix">
+          <div class="float-left"> 
+		   <a href="http://www.u-pem.fr/" target="_blank">
+              <img class="img-responsive" src="img/footer/logo_upem.png" alt="Université Paris-Est Marne-La-Vallée">
+            </a>
+        
+            <a href="http://fr.unesco.org/" target="_blank">
+              <img class="img-responsive" src="img/footer/unesco.png" alt="UNESCO">
+            </a>
+
+            <a target="_blank">
+              <img class="img-responsive" src="img/footer/forumunesco.png" alt="Forum-Unesco">
+            </a>
+
+            <a href="http://idea.univ-paris-est.fr/fr" target="_blank">
+              <img class="img-responsive" src="img/footer/idea.png" alt="IDEA">
+            </a>
+
+            <a href="http://www.agence-nationale-recherche.fr/" target="_blank">
+              <img class="img-responsive" src="img/footer/anr.png" alt="UNESCO">
+            </a>
+			
+		  </div>
+		  <div class="float-right">
+			
+			<a href="https://twitter.com/Algermcn" target="_blank">
+		      <img class="img-responsive footer-right-img" src="img/footer/twitter.svg" alt="Logo Twitter">
+		    </a>
+			
+		    <a href="https://www.facebook.com/AlgerMCN" target="_blank">
+		      <img class="img-responsive footer-right-img" src="img/footer/facebook.svg" alt="Logo Facebook">
+		    </a>
+		  
+		  </div>  
+		  
+        </div>
+      </footer>
+      
+    <!-- </div> -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    
+    <!-- JQuery -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	
+	<!-- JQuery pour les boutons qui deplient les div caches -->
+	<script>
+	/* Cette fonction va etre appellee a chaque fois que l'un des boutons est appuye sur la page monument.
+	Elle va developper la div associe a divId et changer le nom du bouton. */
+	function develop(current_button, divId){
+		$("#"+divId).slideToggle(function() {
+			if ($(current_button).text() == "Voir moins <<") {
+				$(current_button).text("Voir plus >>");
+			} else {
+				$(current_button).text("Voir moins <<");
+			};
+		});
+	};
+	</script>
+	
+	<!-- JS pour offcanvas -->
+	<script>
+    $(document).ready(function () {
+      $('[data-toggle="offcanvas"]').click(function () {
+        $('.row-offcanvas').toggleClass('active')
+        });
+    });
+	</script>
+	
+	<!-- JQuery du bouton de la barre de nav pour afficher le menu -->
+	<script>
+	$(document).ready(function () {
+		$('.menu-button').click(function () {
+			if (document.readyState === "complete") {
+				$('#piemenu').fadeToggle();
+				if($(this).hasClass("btn-danger")) {
+					$(this).toggleClass('btn-danger btn-warning');
+				} else {
+					$(this).toggleClass('btn-warning btn-danger');
+				}
+			}
+		});
+	});
+	</script>
+	
+		<!-- JS list-group -->
+	<script src="js/offcanvas_parser.js"></script>
+
+  </body>
+</html>

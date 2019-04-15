@@ -1,0 +1,22 @@
+#piemenu > svg { width: 100%; height: 100%; }
+		#piemenu { height: 500px; width: 500px; margin: -250px 0 0 -250px; z-index: 2; position: fixed; top: 50%; left: 50%; }
+		@media (max-width: 850px) { #piemenu { height: 400px; width: 400px; margin: -200px 0 0 -200px; font-size: 18px;} }
+		@media (max-width: 480px) { #piemenu { height: 300px; width: 300px; margin: -150px 0 0 -150px; font-size: 13px;} }
+		/*@media (max-width: 400px) { #piemenu { height: 300px; width: 300px; } }*/
+
+		[class|=wheelnav-piemenu-slice-basic] { fill: #b94503; stroke: none; fill-opacity: 0.8 }
+		[class|=wheelnav-piemenu-slice-selected] { fill: #b94503; stroke: none; fill-opacity: 0.8 }
+		[class|=wheelnav-piemenu-slice-hover] { fill: #b94503;  stroke: none; fill-opacity: 0.22; cursor: pointer; }
+
+		[class|=wheelnav-piemenu-title-basic] { fill: #333; stroke: none; }
+		[class|=wheelnav-piemenu-title-selected] { fill: #eee; stroke: none; }
+		[class|=wheelnav-piemenu-title-hover] { fill: #222; stroke: none; cursor: pointer; }
+		[class|=wheelnav-piemenu-title] > tspan { font-family: Impact, Charcoal, sans-serif; font-size: 24px; }
+		@media (max-width: 850px) { [class|=wheelnav-piemenu-title] > tspan { font-size: 20px; } }
+		@media (max-width: 480px) { [class|=wheelnav-piemenu-title] > tspan { font-size: 15px; } }
+		
+		.wheelnav-piemenu-spreader-in,
+		.wheelnav-piemenu-spreader-out { fill: #444; stroke: #444; stroke-width: 2; cursor: pointer; }
+		.wheelnav-piemenu-spreadertitle-in,
+		.wheelnav-piemenu-spreadertitle-out { fill: #eee; stroke: #444; cursor: pointer; }
+		
